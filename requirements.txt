@@ -5,3 +5,6 @@ streamlit
 mysql-connector-python
 Faker
 seaborn
+Image
+base64
+random
