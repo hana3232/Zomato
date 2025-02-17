@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
 import base64
+import time
 
 # Install required packages
 os.system("pip install mysql-connector-python faker pandas matplotlib seaborn --upgrade")
@@ -338,7 +339,6 @@ elif page =="📉 Visualization":
     
 elif page == "🎉Thank You":
 # Add a "Thank You" message with emojis and style
-    import time
 # Display a Thank You message with styling
     st.markdown("""
     <h1 style='text-align: center; color: #FF6347;'>🎉 Thank You! 🎉</h1>
