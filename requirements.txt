@@ -4,3 +4,4 @@ numpy
 streamlit
 mysql-connector-python
 Faker
+seaborn
