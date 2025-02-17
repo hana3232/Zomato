@@ -6,5 +6,4 @@ mysql-connector-python
 Faker
 seaborn
 Pillow
-base64
 random
