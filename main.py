@@ -322,15 +322,23 @@ elif page=="📊Visualization":
                st.warning("⚠ Data is missing for Average Order Value.")
                st.write("🔍 Data Preview:", df.head())  # Debugging output to see the first few rows
 
-        elif selected_query in ["Total Revenue Per Customer", "Top Spending Customers"]:
-        # Bar Plot for Revenue/Spending
-            plt.figure(figsize=(10, 5))
-            sns.barplot(x=df.iloc[:, 1], y=df.iloc[:, 2], palette="viridis")
-            plt.xlabel("Customer Name")
-            plt.ylabel("Total Revenue")
-            plt.title(selected_query)
-            plt.xticks(rotation=45)
-            st.pyplot(plt)
+       elif selected_query in ["Total Revenue Per Customer", "Top Spending Customers"]:
+    # Bar Plot for Revenue/Spending
+           plt.figure(figsize=(12, 6))  # Increase figure size
+           sns.barplot(x=df.iloc[:, 1], y=df.iloc[:, 2], palette="viridis")
+           plt.xlabel("Customer Name")
+           plt.ylabel("Total Revenue")
+           plt.title(selected_query)
+    
+    # Adjust x-axis labels
+           plt.xticks(rotation=45, ha='right')  # Rotate and align
+    
+           # Show fewer labels (optional)
+           step = max(1, len(df) // 20)  # Show approximately 20 labels
+           plt.xticks(ticks=range(0, len(df), step), labels=df.iloc[::step, 1])
+
+           st.pyplot(plt)
+
         elif selected_query == "Restaurants With Most Orders":
             if not df.empty and df.shape[1] >= 2:  # Ensure df has at least 2 columns
                plt.figure(figsize=(12, 6))
