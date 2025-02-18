@@ -16,13 +16,16 @@ Streamlit: Used to create the interactive web interface for visualizing the data
 Matplotlib / Seaborn: Used for data visualization.
 TiDB Cloud: Cloud-based MySQL-compatible database to run queries.
 **Project Structure**
-                              Zomato-Delivery-Insight/
-                              │
-                              ├── main.py               # Main Streamlit app file for the dashboard
-                              ├── Zomato.py             # Python file to handle SQL connections and queries
-                              ├── requirements.txt      # List of required Python libraries
-                              ├── README.md             # This README file
-                              └── LICENSE               # Project license file
+
+
+                                Zomato-Delivery-Insight/
+                                    ├── main.py               # Main Streamlit app file for the dashboard
+                                    ├── Zomato.py             # Python file to handle SQL connections and queries
+                                    ├── requirements.txt      # List of required Python libraries
+                                    ├── README.md             # This README file
+                                    └── LICENSE               # Project license file
+
+                                    
 **Installation**
 Step 1: Clone the Repository
 Start by cloning this repository to your local machine.
