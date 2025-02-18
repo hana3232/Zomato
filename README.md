@@ -47,23 +47,27 @@ The Zomato Delivery Insight project is a data analytics and visualization applic
 
                                     
 **Installation**
-Step 1: Clone the Repository
+
+**Step 1:** Clone the Repository
+
 Start by cloning this repository to your local machine.
 
 
                               git clone https:/hana3232/github.com//Zomato.git
                               cd Zomato-Delivery-Insight
-Step 2: Install Dependencies
+**Step 2:** Install Dependencies
+
 Create a virtual environment and install the required dependencies using requirements.txt.
 
 
                               python -m venv venv
                               source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
                               pip install -r requirements.txt
-Step 3: Set Up Database
+**Step 3:** Set Up Database
+
 Ensure you have access to TiDB Cloud or a local MySQL database to execute the SQL queries. If you're using a local MySQL setup, modify the database.py to point to your database credentials.
 
-Step 4: Run the App
+**Step 4:** Run the App
 To start the interactive dashboard, run the Streamlit app.
 
 
