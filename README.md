@@ -10,29 +10,30 @@ An interactive analytics dashboard built with Python, SQL, and Streamlit, provid
 **Zomato Delivery Insight**
 
 **Project Overview**
+
 The Zomato Delivery Insight project is a data analytics and visualization application aimed at providing insightful data analysis on delivery operations. The project utilizes Python for data generation, SQL for querying, and Streamlit for interactive data visualization. The main goal is to explore delivery patterns, customer preferences, restaurant performance, and delivery times.
 
 **Features**
 
-Database Design: Utilizes normalized SQL tables for storing and analyzing restaurant and delivery data.
+**Database Design:** Utilizes normalized SQL tables for storing and analyzing restaurant and delivery data.
 
-Dynamic Querying: Predefined queries that allow for analysis of customer orders, delivery times, and revenue insights.
+**Dynamic Querying:** Predefined queries that allow for analysis of customer orders, delivery times, and revenue insights.
 
-Streamlit Dashboard: Interactive dashboard to visualize key insights like total revenue, popular restaurants, delivery efficiency, and more.
+**Streamlit Dashboard:** Interactive dashboard to visualize key insights like total revenue, popular restaurants, delivery efficiency, and more.
 
-Synthetic Data Generation: Python's Faker library is used to generate synthetic customer, order, and delivery data for testing and analysis.
+**Synthetic Data Generation:** Python's Faker library is used to generate synthetic customer, order, and delivery data for testing and analysis.
 
 **Technologies Used**
 
-Python: Used for data manipulation and generation (Faker, Pandas).
+**Python:** Used for data manipulation and generation (Faker, Pandas).
 
-SQL: MySQL for querying data from the database.
+**SQL:** MySQL for querying data from the database.
 
-Streamlit: Used to create the interactive web interface for visualizing the data.
+**Streamlit:** Used to create the interactive web interface for visualizing the data.
 
-Matplotlib / Seaborn: Used for data visualization.
+**Matplotlib / Seaborn:** Used for data visualization.
 
-TiDB Cloud: Cloud-based MySQL-compatible database to run queries.
+**TiDB Cloud:** Cloud-based MySQL-compatible database to run queries.
 
 **Project Structure**
 
