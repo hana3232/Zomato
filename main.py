@@ -119,7 +119,7 @@ if page == "🏠Home":
     """,
     unsafe_allow_html=True,
                        )
-    load_image_with_animation("C:\\Users\\admin\\Downloads\\Zomato-Logo.png")
+    st.image("https://logos-world.net/wp-content/uploads/2020/11/Zomato-Logo.png")
 # Main Title and Subtitl
     st.markdown('<p class="subtitle">Analyze Orders, Restaurants, and Deliveries with Interactive Visualizations!</p>', unsafe_allow_html=True)
 
@@ -129,7 +129,7 @@ elif page == "🚀App View":
     st.markdown("[Visit Zomato Website](https://www.zomato.com)")
 
 elif page == "💡Business Insights":
-    load_image_with_animation("C:\\Users\\admin\\Downloads\\PngItem_695722-1-1024x720.png", width=400)
+    st.image("https://www.india.com/wp-content/uploads/2019/12/Zomato.jpg")
     st.title("🍽️ Zomato Data Pipeline - Business Insights")
     st.write("Analyze key business metrics and gain insights from your Zomato database.")    
     st.subheader("📊 Table Explanations")
