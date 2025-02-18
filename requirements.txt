@@ -1,10 +1,8 @@
-
-matplotlib
-pandas
-numpy
-streamlit
-mysql-connector-python
-Faker
-seaborn
-Pillow
-random
+matplotlib == 3.10.0
+pandas == 2.2.3
+numpy ==  1.26.4
+streamlit ==  1.37.1
+mysql-connector-python == 9.2.0
+Faker == 36.1.1
+seaborn == 0.13.2
+Pillow == 10.4.0
