@@ -7,7 +7,7 @@ An interactive analytics dashboard built with Python, SQL, and Streamlit, provid
    ✅ SQL-powered analytics for data-driven decisions 
    ✅ Peak order times, revenue insights &amp; delivery efficiency
    
-**#Zomato Delivery Insight**
+**Zomato Delivery Insight**
 
 **Project Overview**
 The Zomato Delivery Insight project is a data analytics and visualization application aimed at providing insightful data analysis on delivery operations. The project utilizes Python for data generation, SQL for querying, and Streamlit for interactive data visualization. The main goal is to explore delivery patterns, customer preferences, restaurant performance, and delivery times.
