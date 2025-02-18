@@ -15,15 +15,25 @@ The Zomato Delivery Insight project is a data analytics and visualization applic
 **Features**
 
 Database Design: Utilizes normalized SQL tables for storing and analyzing restaurant and delivery data.
+
 Dynamic Querying: Predefined queries that allow for analysis of customer orders, delivery times, and revenue insights.
+
 Streamlit Dashboard: Interactive dashboard to visualize key insights like total revenue, popular restaurants, delivery efficiency, and more.
+
 Synthetic Data Generation: Python's Faker library is used to generate synthetic customer, order, and delivery data for testing and analysis.
-Technologies Used
+
+**Technologies Used**
+
 Python: Used for data manipulation and generation (Faker, Pandas).
+
 SQL: MySQL for querying data from the database.
+
 Streamlit: Used to create the interactive web interface for visualizing the data.
+
 Matplotlib / Seaborn: Used for data visualization.
+
 TiDB Cloud: Cloud-based MySQL-compatible database to run queries.
+
 **Project Structure**
 
 
