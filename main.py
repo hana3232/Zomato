@@ -64,7 +64,7 @@ db.connect()
 # Multi-page setup
 st.set_page_config(page_title="Zomato Data Analytics", page_icon="🍽️", layout="wide")
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["🏠Home", "🚀App View","💡Business Insights", "📝CRUD Operations", "🔍Data Insights","📊Visualization","🎉Thank You"])
+page = st.sidebar.radio("Go to", ["🏠Home", "🚀App View","💡Business Insights","🗂️Table View", "📝CRUD Operations", "🔍Data Insights","📊Visualization","🎉Thank You"])
 
 # Load and display image with enhanced animation
 def load_image_with_animation(image_path, width=800):
@@ -150,8 +150,22 @@ elif page == "💡Business Insights":
     for table, description in tables.items():
         st.write(f"**{table}**: {description}")
 # Define DatabaseManager class and other code here...
+elif page == "🗂️Table View":
+    st.subheader("📊VIEW DATA TABLE")
+    query={"Customer Table":"SELECT * FROM Customer_Table",
+           "Restaunrant Table":"SELECT * FROM Restaurant_Table",
+           "Order Table": "select * from Order_Table",
+           "Delivery Table": "selecct * from Delivery_Table",
+           "Delivery Person Table": "select * from Delivery_Person_Table"}
+    table=st.selectbox("Select Table",list(query.keys()))
+    if st.button("🔍 Run Query"):
+        st.markdown(f"**📚 Query:** `{query[table]}`")
+        result, columns = db.execute_query(query[table])
+        df = pd.DataFrame(result, columns=columns)
+        st.dataframe(df, use_container_width=True, height=400)
 
-if page == "📝CRUD Operations":
+
+elif page == "📝CRUD Operations":
     Tables = {
         "Customer_Table": "Stores customer information such as Customer_ID, Name, Contact details, and Address.",
         "Restaurant_Table": "Contains details about restaurants including Restaurant_ID, Name, Location, Cuisine Type, and Ratings.",
@@ -243,7 +257,7 @@ elif page=="📊Visualization":
 
 # Load your SQL queries dictionary
     queries = {
-    "Total Revenue Per Restaurant": "SELECT Restaurant_ID, SUM(Order_Amount) FROM Order_Table GROUP BY Restaurant_ID;",
+    "Total Revenue Per Restaurant": "SELECT Restaurant_ID, SUM(Order_Amount) FROM Order_Table GROUP BY Restaurant_ID LIMIT 50;",
     "Average Order Value": "SELECT AVG(Order_Amount) FROM Order_Table;",
     "Most Popular Restaurant": """SELECT o.Restaurant_ID, r.Restaurant_Name, COUNT(*) AS Order_Count 
                                   FROM Order_Table o 
