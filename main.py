@@ -125,7 +125,7 @@ if page == "🏠Home":
 
 
 elif page == "🚀App View":
-    width = 400  # Adjust width (e.g., 300, 400, 500)
+    width = 600  # Adjust width (e.g., 300, 400, 500)
     height = 300  # Adjust height (e.g., 200, 250, 300)
 
     st.markdown(
