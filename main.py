@@ -126,7 +126,7 @@ if page == "🏠Home":
 
 elif page == "🚀App View":
     width = 400  # Adjust width (e.g., 300, 400, 500)
-    height = 250  # Adjust height (e.g., 200, 250, 300)
+    height = 300  # Adjust height (e.g., 200, 250, 300)
 
     st.markdown(
     f'<iframe width="{width}" height="{height}" src="https://www.youtube.com/embed/5Hlj_h24vvM" frameborder="0" allowfullscreen></iframe>',
