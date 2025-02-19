@@ -129,7 +129,7 @@ elif page == "🚀App View":
     st.markdown("[Visit Zomato Website](https://www.zomato.com)")
 
 elif page == "💡Business Insights":
-    load_image_with_animation("PngItem_695722-1-1024x720.png")
+    load_image_with_animation("PngItem_695722-1-1024x720.png",width=400)
     st.title("🍽️ Zomato Data Pipeline - Business Insights")
     st.write("Analyze key business metrics and gain insights from your Zomato database.")    
     st.subheader("📊 Table Explanations")
