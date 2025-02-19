@@ -133,7 +133,8 @@ elif page == "🚀App View":
     unsafe_allow_html=True
 )
 
-    st.markdown("https://www.zomato.com")
+    st.write("🍕 To download the app, visit here:")
+    st.markdown("[Zomato Website](https://www.zomato.com)")
 
 elif page == "💡Business Insights":
     load_image_with_animation("PngItem_695722-1-1024x720.png",width=400)
