@@ -125,15 +125,15 @@ if page == "🏠Home":
 
 
 elif page == "🚀App View":
-    width = 800  # Adjust width (e.g., 300, 400, 500)
-    height = 300  # Adjust height (e.g., 200, 250, 300)
+    width = 900  # Adjust width (e.g., 300, 400, 500)
+    height = 400  # Adjust height (e.g., 200, 250, 300)
 
     st.markdown(
     f'<iframe width="{width}" height="{height}" src="https://www.youtube.com/embed/5Hlj_h24vvM" frameborder="0" allowfullscreen></iframe>',
     unsafe_allow_html=True
 )
 
-    st.markdown("[Visit Zomato Website](https://www.zomato.com)")
+    st.markdown("https://www.zomato.com")
 
 elif page == "💡Business Insights":
     load_image_with_animation("PngItem_695722-1-1024x720.png",width=400)
