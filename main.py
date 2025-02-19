@@ -133,9 +133,9 @@ elif page == "🚀App View":
     unsafe_allow_html=True
 )
 
-    st.markdown("
+    st.markdown(
     
-        ["📱To download the Zomato app, visit here:"](https://www.zomato.com)")
+        ["📱To download the Zomato app, visit here:"](https://www.zomato.com))
 
 elif page == "💡Business Insights":
     load_image_with_animation("PngItem_695722-1-1024x720.png",width=400)
