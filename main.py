@@ -119,7 +119,7 @@ if page == "🏠Home":
     """,
     unsafe_allow_html=True,
                        )
-    st.image("https://logos-world.net/wp-content/uploads/2020/11/Zomato-Logo.png")
+    load_image_with_animation("https://logos-world.net/wp-content/uploads/2020/11/Zomato-Logo.png")
 # Main Title and Subtitl
     st.markdown('<p class="subtitle">Analyze Orders, Restaurants, and Deliveries with Interactive Visualizations!</p>', unsafe_allow_html=True)
 
