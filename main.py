@@ -125,7 +125,14 @@ if page == "🏠Home":
 
 
 elif page == "🚀App View":
-    st.video("https://youtu.be/5Hlj_h24vvM",width=400)
+    width = 400  # Adjust width (e.g., 300, 400, 500)
+    height = 250  # Adjust height (e.g., 200, 250, 300)
+
+    st.markdown(
+    f'<iframe width="{width}" height="{height}" src="https://www.youtube.com/embed/5Hlj_h24vvM" frameborder="0" allowfullscreen></iframe>',
+    unsafe_allow_html=True
+)
+
     st.markdown("[Visit Zomato Website](https://www.zomato.com)")
 
 elif page == "💡Business Insights":
