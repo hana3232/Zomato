@@ -125,7 +125,7 @@ if page == "🏠Home":
 
 
 elif page == "🚀App View":
-    st.video("https://youtu.be/5Hlj_h24vvM")
+    st.video("https://youtu.be/5Hlj_h24vvM",width=800)
     st.markdown("[Visit Zomato Website](https://www.zomato.com)")
 
 elif page == "💡Business Insights":
